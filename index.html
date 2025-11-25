@@ -12,15 +12,17 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav class="fixed top-0 left-0 w-full bg-neutral-primary  border-default z-50 animate__animated animate__fadeInUp">
-  <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-neutral-primary border-default z-50">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
 
     <!-- Logo -->
-    <img src="./logo.png" class="h-10" alt="Logo">
+    <img src="./logo.png" class="h-10 flex-shrink-0" alt="Logo">
 
-    <!-- Menu -->
-    <div class="hidden md:flex space-x-8">
-      <ul class="flex space-x-8 font-medium text-heading">
+    <!-- Menu (hidden on small screens) -->
+    <div class="hidden md:block md:w-auto">
+      <ul class="flex justify-center font-medium text-heading gap-8">
         <li><a href="#home" class="text-blue-500 hover:text-black">Home</a></li>
         <li><a href="#service" class="hover:text-blue-500">Service</a></li>
         <li><a href="#doctor" class="hover:text-blue-500">FindDoctors</a></li>
@@ -31,63 +33,76 @@
     </div>
 
     <!-- Button -->
-    <button 
-      class="px-5 py-2 text-sm font-medium text-white rounded 
-      bg-gradient-to-r from-blue-300 to-blue-500 text-blue-700 shadow-[0_4px_20px_rgba(59,130,246,0.3)] hover:shadow-[0_6px_25px_rgba(59,130,246,0.5)] transition-shadow duration-300
-      hover:from-blue-500 hover:to-blue-700 hover:text-white transition-all "
-    >
-      Join Us
-    </button>
+    <div class="mt-[-40px] ml-[60px] md:mt-0 flex justify-center md:justify-end w-full md:w-auto">
+      <button 
+        class="px-5 py-2 text-sm font-medium text-white rounded 
+        bg-gradient-to-r from-blue-300 to-blue-500 text-blue-700 shadow-[0_4px_20px_rgba(59,130,246,0.3)] 
+        hover:shadow-[0_6px_25px_rgba(59,130,246,0.5)] transition-shadow duration-300
+        hover:from-blue-500 hover:to-blue-700 hover:text-white transition-all">
+        Join Us
+      </button>
+    </div>
 
   </div>
 </nav>
 
 
 
-<section class="text-gray-600 body-font animate__animated animate__fadeInDown" id="home">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-24">
 
-    <!-- Left Text -->
-    <div class="flex flex-col md:w-1/2 lg:pr-16 md:pr-8 items-center md:items-start text-center md:text-left mb-12 md:mb-0">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-        Your <span class="text-blue-400">trusted partner</span><br class="hidden lg:inline-block"> in digital healthcare.
+
+<section class="text-gray-600 body-font mt-[60px] animate__animated animate__fadeInDown" id="home">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4 sm:px-6 md:px-10 py-12 md:py-24 ">
+
+    <!-- LEFT TEXT -->
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+
+      <!-- HEADING -->
+      <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-center md:text-left leading-tight break-words w-full">
+        Your <span class="text-blue-400">trusted partner</span>
+        <br class="sm:hidden">
+        in digital healthcare.
       </h1>
 
-      <p class="mb-8 leading-relaxed text-gray-700">
-        <span class="text-blue-500">Empowering Your Health at Every Step.</span> 
-        Experience personalized medical care from the comfort of your home. Connect with <span class="text-blue-500">certified doctors,</span> or manage prescriptions, and schedule appointments with ease. Ready to take control of your health? <span class="text-blue-500">Get Started</span> or Book an Appointment today.
+      <!-- PARAGRAPH -->
+      <p class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed px-1">
+        <span class="text-blue-500">Empowering Your Health at Every Step.</span>
+        Experience personalized medical care from the comfort of your home. Connect with 
+        <span class="text-blue-500">certified doctors,</span> manage prescriptions, and schedule appointments easily.
       </p>
 
-      <div class="flex justify-center md:justify-start mb-4">
-        <button class="inline-flex text-white bg-gradient-to-r from-blue-300 to-blue-500 hover:from-blue-500 hover:to-blue-700 hover:text-white font-medium py-2 px-6 rounded text-lg shadow-[0_6px_25px_rgba(59,130,246,0.6)] 
-            hover:shadow-[0_8px_30px_rgba(59,130,246,0.8)] 
-            transition-shadow duration-300"">
+      <!-- BUTTON -->
+      <div class="w-full flex justify-center md:justify-start">
+        <button
+          class="inline-flex text-white bg-gradient-to-r from-blue-300 to-blue-500 hover:from-blue-500 hover:to-blue-700 font-medium py-2 px-6 rounded text-base sm:text-lg shadow-lg transition duration-300">
           Book an Appointment >
         </button>
       </div>
 
-      <p class="mb-4">Trusted by millions across the globe:</p>
-     <img class="w-full max-w-[200px] md:max-w-[250px]" src="./Group 10.png" alt="Trusted logos">
-
+      <!-- TRUSTED LOGOS -->
+      <p class="text-sm md:text-base pt-1">Trusted by millions across the globe:</p>
+      <img class="w-[130px] sm:w-[180px] md:w-[240px]" src="./Group 10.png" alt="Trusted logos">
 
     </div>
 
-    <!-- Right Image -->
-    <div class="md:w-1/2 w-full flex justify-center md:justify-end ">
-     <img src="./header.png" alt="hero image" 
-     class="w-full max-w-sm md:max-w-md lg:max-w-lg object-cover rounded">
-
+    <!-- RIGHT IMAGE -->
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+      <img
+        src="./header.png"
+        alt="hero image"
+        class="w-full max-w-[270px] sm:max-w-sm md:max-w-md lg:max-w-lg object-cover rounded">
     </div>
 
   </div>
 </section>
 
+
+
 <section class="max-w-4xl mx-auto border border-blue-200 rounded-3xl bg-white p-6 m-5 mt-[-10px]
             shadow-[0_8px_30px_rgba(59,130,246,0.8)]
             transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-[0_12px_40px_rgba(59,130,246,1)]" data-aos="fade-left">
   <!-- Heading -->
-  <div class="text-center mb-6">
-    <h1 class="text-blue-500 title-font sm:text-3xl text-2xl font-medium ml-[-230px]">
+  <div class=" mb-6">
+    <h1 class="text-blue-500 title-font sm:text-3xl text-2xl font-medium ">
       Easily book an appointment in 3 simple steps
     </h1>
   </div>
@@ -136,100 +151,96 @@
 </section>
 
 
-<section class="mt-[-60px] px-5 w-full flex justify-center mt-[30px]" data-aos="fade-right" id="service">
-  <div class="max-w-[1100px] w-full px-5 md:px-10 py-16 text-center">
+<section class="px-4 w-full flex justify-center mt-[20px]" data-aos="fade-right" id="service">
+  <div class="max-w-[1100px] w-full px-4 md:px-10 py-10 text-center">
 
     <!-- Top Heading -->
     <div class="max-w-2xl mx-auto">
-      <h1 class="title-font sm:text-4xl text-2xl mb-4 font-medium">
+      <h1 class="title-font sm:text-4xl text-xl mb-3 font-medium">
         Top <span class="text-blue-500">services</span> we offer
       </h1>
-      <p class="text-gray-600">
-        In today’s fast-paced world, your health deserves the utmost attention and convenience.
-        That’s why HealNet offers a suite of integrated services designed to cater to your healthcare needs digitally:
+      <p class="text-gray-600 text-sm leading-6">
+        In today’s fast-paced world, your health deserves the utmost attention.
       </p>
     </div>
 
-    <!-- FIRST ROW (2 CARDS) -->
-    <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- FIRST ROW -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
       <!-- Card 1 -->
-      <div class="bg-white p-7 rounded-2xl border border-blue-300
-            shadow-[0_4px_20px_rgba(0,0,0,0.05)] 
-            text-left max-w-[450px] mx-auto ml-0 md:ml-[80px]
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-blue-300
+            shadow-[0_4px_20px_rgba(0,0,0,0.05)]
+            text-left max-w-[450px] mx-auto md:ml-[80px]
             transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]"
+            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]">
 
-        <img src="Vector (2).png" class="w-7 h-6 mb-4" />
-        <h3 class="text-blue-600 font-semibold text-xl mb-2">Online Consultations</h3>
+        <img src="Vector (2).png" class="w-6 h-6 mb-3" />
+        <h3 class="text-blue-600 font-semibold text-lg sm:text-xl mb-1">Online Consultations</h3>
 
-        <p class="text-gray-700 text-sm leading-6">
-          Consult with top doctors across various specialties via video or chat communication. 
-          It’s totally secure, private, and convenient. Choose the best time for an in-person visit 
-          with our easy-to-use scheduling system, or proceed with our online consultation.
+        <p class="text-gray-700 text-xs sm:text-sm leading-5">
+         Consult with top doctors across various specialties via video or chat communication. It’s totally secure, private, and convenient. Choose the best time for an in-person visit with our easy-to-use scheduling system, or proceed with our online consultation.
         </p>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white p-7 rounded-2xl border border-blue-300
-            shadow-[0_4px_20px_rgba(0,0,0,0.05)]
-            text-left max-w-[350px] mx-auto ml-0 md:ml-[20px]
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-blue-300
+            shadow-[0_4px_20px_rgba(0,0,0,0.05)] 
+            text-left max-w-[350px] mx-auto md:ml-[20px]
             transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)] ">
+            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]">
 
-        <img src="Vector (3).png" class="w-5 h-6 mb-4" />
-        <h3 class="text-blue-600 font-semibold text-xl mb-2">Booking Appointments</h3>
+        <img src="Vector (3).png" class="w-5 h-6 mb-3" />
+        <h3 class="text-blue-600 font-semibold text-lg sm:text-xl mb-1">Booking Appointments</h3>
 
-        <p class="text-gray-700 text-sm leading-6">
-          Choose the best time for an in-person visit with our easy-to-use scheduling system, 
-          or proceed with our online consultation features.
+        <p class="text-gray-700 text-xs sm:text-sm leading-5">
+          Choose the best time for an in-person visit with our easy-to-use scheduling system, or proceed with our online consultation features.
         </p>
       </div>
 
     </div>
 
-    <!-- SECOND ROW (3 CARDS) -->
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- SECOND ROW -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
       <!-- Card 3 -->
-      <div class="bg-white p-7 rounded-2xl border border-blue-300 
-      shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left   transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]
-      max-w-[250px] mx-auto ml-0 md:ml-[80px]">
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-blue-300
+            shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left max-w-[250px] mx-auto md:ml-[80px]
+            transform transition duration-300 ease-in-out
+                hover:scale-105 hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)]">
 
-        <img src="./Vector (4).png" class="w-5 h-6 mb-4" />
-        <h3 class="text-blue-600 font-semibold text-xl mb-2">Prescriptions</h3>
+        <img src="Vector (4).png" class="w-5 h-6 mb-3" />
+        <h3 class="text-blue-600 font-semibold text-lg sm:text-xl mb-1">Prescriptions</h3>
 
-        <p class="text-gray-700 text-sm leading-6">
-          Receive and renew prescriptions digitally after your consultation with our specialists.
+        <p class="text-gray-700 text-xs sm:text-sm leading-5">
+          Receive and renew prescriptions digitally after your consultation with our specialists .
         </p>
       </div>
 
       <!-- Card 4 -->
-      <div class="bg-white p-7 rounded-2xl border border-blue-300 
-      shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left 
-      max-w-[250px] mx-auto ml-0 md:ml-[20px]   transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]">
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-blue-300
+            shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left max-w-[250px] mx-auto md:ml-[20px]
+            transform transition duration-300 ease-in-out
+                hover:scale-105 hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)]">
 
-        <img src="./Vector (5).png" class="w-5 h-6 mb-4" />
-        <h3 class="text-blue-600 font-semibold text-xl mb-2">Medical Notes</h3>
+        <img src="Vector (5).png" class="w-5 h-6 mb-3" />
+        <h3 class="text-blue-600 font-semibold text-lg sm:text-xl mb-1">Medical Notes</h3>
 
-        <p class="text-gray-700 text-sm leading-6">
-          Obtain necessary medical notes for work or school with only a few clicks of hassle.
+        <p class="text-gray-700 text-xs sm:text-sm leading-5">
+       Obtain necessary medical notes for work or school with only a few clicks of hassle.
         </p>
       </div>
 
       <!-- Card 5 -->
-      <div class="bg-white p-7 rounded-2xl border border-blue-300   transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]
-      shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left 
-      max-w-[250px] mx-auto ml-0 md:ml-[-40px]">
+      <div class="bg-white p-4 sm:p-6 rounded-2xl border border-blue-300
+            shadow-[0_4px_20px_rgba(0,0,0,0.05)] text-left max-w-[250px] mx-auto md:ml-[-40px]
+             transform transition duration-300 ease-in-out
+                hover:scale-105 hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)]">
 
-        <img src="./Subtract.png" class="w-5 h-6 mb-4" />
-        <h3 class="text-blue-600 font-semibold text-xl mb-2">Medicine Refills</h3>
+        <img src="Subtract.png" class="w-5 h-6 mb-3" />
+        <h3 class="text-blue-600 font-semibold text-lg sm:text-xl mb-1">Medicine Refills</h3>
 
-        <p class="text-gray-700 text-sm leading-6">
-          Skip the pharmacy queues and save time + energy by ordering medicine refills online.
+        <p class="text-gray-700 text-xs sm:text-sm leading-5">
+         Skip the pharmacy queues and save time + energy by ordering medicine refills online.
         </p>
       </div>
 
@@ -238,34 +249,39 @@
   </div>
 </section>
 
-<section class="px-5 w-full flex justify-center mt-[-20px]" data-aos="fade-right" id="about" >
-  <div class="max-w-6xl w-full px-5 md:px-10 py-14 ">
 
-    <div class="bg-white border border-blue-300 rounded-3xl shadow-lg  transform transition duration-300 ease-in-out
-            hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.5)]">
-      
+<section class="px-4 w-full flex justify-center mt-[10px]" data-aos="fade-right" id="about">
+  <div class="max-w-5xl w-full px-4 md:px-8"> <!-- max-width slightly reduced -->
+
+    <div class="bg-white border border-blue-300 rounded-3xl shadow-lg 
+                transform transition duration-300 ease-in-out
+                hover:scale-105 hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)]
+                p-4 sm:p-5"> <!-- padding reduced -->
+
       <!-- Heading -->
-      <h2 class="mt-10 mb-6 text-center sm:text-3xl text-2xl font-semibold">
+      <h2 class="mt-3 mb-3 text-center text-4xl sm:text-xl font-semibold leading-tight">
         <span class="text-blue-400">HealNet’s Story</span>: Get to know us
       </h2>
 
       <!-- CARD -->
-      <div class="p-6 sm:p-10 flex flex-col md:flex-row items-center md:items-start gap-8">
+      <div class="p-2 sm:p-4 flex flex-col md:flex-row items-center md:items-start gap-3">
 
         <!-- IMAGE -->
         <div class="w-full md:w-1/2 flex justify-center">
-          <img src="Rectangle 7.png" 
-               class="rounded-xl w-full h-[300px] sm:h-[350px] md:h-[400px] max-w-[380px] md:max-w-none object-cover shadow-md" />
+          <img src="Rectangle 7.png"
+               class="rounded-xl w-[300px] h-[180px] sm:h-[250px] md:h-[300px]
+                      max-w-[280px] md:max-w-none object-cover shadow-md" /> <!-- width & height reduced -->
         </div>
 
         <!-- TEXT -->
         <div class="w-full md:w-1/2 text-center md:text-left">
-          <p class="text-gray-700 leading-7 text-sm sm:text-base mb-6">
+          <p class="text-gray-700 leading-6 text-xs sm:text-sm md:text-base mb-4">
             HealNet is more than just an online medical service; it’s a movement towards accessible, efficient, and compassionate healthcare for all. Founded by a team of visionary doctors, healthcare professionals, and technology experts, we are driven by the mission to deliver exceptional medical care directly to you, no matter where you are. Our platform is built on the pillars of trust, innovation, and patient-centricity, ensuring that every interaction is personalized and every treatment plan is tailored to your unique needs. With a network of licensed practitioners from diverse medical fields, we guarantee comprehensive care that’s just a click away.
           </p>
 
-          <button class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm sm:text-base 
-                  hover:bg-blue-400 transition-all duration-300 shadow">
+          <button class="bg-blue-500 text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg
+                         text-xs sm:text-sm md:text-base
+                         hover:bg-blue-400 transition-all duration-300 shadow">
             Learn more about us
           </button>
         </div>
@@ -274,6 +290,8 @@
     </div>
   </div>
 </section>
+
+
 
 <section class="flex flex-col items-center text-center px-5" data-aos="fade-right"  id="blog">
   <h1 class="mt-[40px] mb-[-10px] text-2xl sm:text-3xl font-semibold">
